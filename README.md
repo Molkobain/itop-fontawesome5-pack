@@ -24,15 +24,15 @@ No configuration needed.
 #### Portal: Change a brick's icon
 Let's say that for example you would like to change the *New request* icon with [this one](https://fontawesome.com/icons/book-open?style=solid). Just alter the portal XML to change the ``/itop_design/module_designs/module_design[@id="<PORTAL_ID>"]/bricks/brick[@id="services"]/decoration_class/default`` tag value with *fas fa-book-open fa-2x*
 
-* XML before *
+*XML before*
 ![Before](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-example-01-01.PNG)
 
-* XML after *
+*XML after*
 ![After](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-example-01-02.PNG)
 
 Run iTop setup and your portal home page should look like this!
 
-* Result *
+*Result*
 ![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-example-01-03.PNG)
 
 ### Licensing
