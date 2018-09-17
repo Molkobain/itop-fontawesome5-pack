@@ -8,6 +8,8 @@ Use [Font Awesome 5](https://fontawesome.com/) new icon sets in both portal & co
 ### Compatibility
 Compatible with iTop 2.4+
 
+*Note: Partial compatibility with iTop 2.3, only the admin console.*
+
 ### Installation
 * Unzip the extension
 * Copy the ``dist/molkobain-fontawesome5-pack`` folder under ``<PATH_TO_ITOP>/extensions`` folder of your iTop
