@@ -1,3 +1,5 @@
+👋 [Available on Molkobain I/O!](https://www.molkobain.com/product/font-awesome-5-pack/)
+
 # iTop extension: molkobain-fontawesome5-pack
 
 ### Description
