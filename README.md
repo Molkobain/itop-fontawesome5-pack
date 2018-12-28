@@ -5,7 +5,7 @@
 ### Description
 Use [Font Awesome 5](https://fontawesome.com/) new icon sets in both portal & console.
 
-![Description decoration](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-icon-examples.PNG)
+![Description decoration](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-icon-examples.PNG)
 
 ### Compatibility
 Compatible with iTop 2.4+
@@ -19,7 +19,7 @@ Compatible with iTop 2.4+
 
 *Your folders should look like this*
 
-![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-install.PNG)
+![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-install.PNG)
 
 ### Configuration
 No configuration needed.
@@ -30,17 +30,17 @@ Let's say that for example you would like to change the *New request* icon with 
 
 *XML before*
 
-![Before](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-example-01-01.PNG)
+![Before](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-example-01-01.PNG)
 
 *XML after*
 
-![After](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-example-01-02.PNG)
+![After](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-example-01-02.PNG)
 
 Run iTop setup and your portal home page should look like this!
 
 *Result*
 
-![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/master/docs/mfp-example-01-03.PNG)
+![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-example-01-03.PNG)
 
 ### Licensing
 This extension is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
