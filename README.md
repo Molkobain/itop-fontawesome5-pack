@@ -3,6 +3,7 @@
 # iTop extension: molkobain-fontawesome5-pack
 * [Description](#description)
 * [Compatibility](#compatibility)
+* [Downloads](#downloads)
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [How to](#how-to)
@@ -16,6 +17,11 @@ Use [Font Awesome 5](https://fontawesome.com/) new icon sets in both portal & co
 Compatible with iTop 2.4+
 
 *Note: Partial compatibility with iTop 2.3, only the admin console.*
+
+## Downloads
+Stable releases can be found either on the [releases page](https://github.com/Molkobain/itop-fontawesome5-pack/releases) or on [Molkobain I/O](https://www.molkobain.com/product/font-awesome-5-pack/).
+
+Downloading it directly from the *Clone or download* will get you the version under development which might be unstable.
 
 ## Installation
 * Unzip the extension
