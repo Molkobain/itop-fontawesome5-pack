@@ -13,22 +13,26 @@ use utils;
 use AbstractPortalUIExtension;
 use Silex\Application;
 
-/**
- * Class PortalUIExtension
- *
- * @package Molkobain\iTop\Extension\FontAwesome5\Portal\Extension
- */
-class PortalUIExtension extends AbstractPortalUIExtension
+// Protection for iTop 2.3 and older
+if(class_exists('AbstractPortalUIExtension'))
 {
 	/**
-	 * @inheritdoc
+	 * Class PortalUIExtension
+	 *
+	 * @package Molkobain\iTop\Extension\FontAwesome5\Portal\Extension
 	 */
-    public function GetCSSFiles(Application $oApp)
-    {
-    	$aReturn = array();
+	class PortalUIExtension extends AbstractPortalUIExtension
+	{
+		/**
+		 * @inheritdoc
+		 */
+		public function GetCSSFiles(Application $oApp)
+		{
+			$aReturn = array();
 
-    	$aReturn[] = utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/fontawesome-free-5.0.13/css/fontawesome-all.min.css?v=' . utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
+			$aReturn[] = utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/fontawesome-free-5.7.2-web/css/all.min.css?v=' . utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
 
-        return $aReturn;
-    }
+			return $aReturn;
+		}
+	}
 }

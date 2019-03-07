@@ -9,7 +9,7 @@
 * [How to](#how-to)
 
 ## Description
-Use [Font Awesome 5](https://fontawesome.com/) new icon sets in both portal & console.
+Use [Font Awesome 5.7.2](https://fontawesome.com/) new icon sets in both portal & console.
 
 ![Description decoration](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-icon-examples.PNG)
 
