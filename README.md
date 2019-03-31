@@ -54,4 +54,4 @@ Run iTop setup and your portal home page should look like this!
 ![Extensions folder](https://raw.githubusercontent.com/Molkobain/itop-fontawesome5-pack/develop/docs/mfp-example-01-03.PNG)
 
 ## Licensing
-This extension is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+This extension is under [AGPLv3](https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License).
