@@ -5,9 +5,9 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Font Awesome 5]]></label>
 	<description><![CDATA[Use new icon sets for both portal & console.]]></description>
-	<version>1.1.0</version>
-	<release_date>2019-03-09</release_date>
-	<version_description><![CDATA[Update FontAwesome to v5.7.2]]></version_description>
+	<version>1.1.1</version>
+	<release_date>2019-05-06</release_date>
+	<version_description><![CDATA[Fix compatiblity with some FontAwesome 4.x icons]]></version_description>
 	<itop_version_min>2.4.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
