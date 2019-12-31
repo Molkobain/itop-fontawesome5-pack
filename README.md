@@ -20,9 +20,8 @@ Use [Font Awesome 5.7.2](https://fontawesome.com/) new icon sets in both portal 
 ![Description decoration](docs/mfp-icon-examples.png)
 
 ## Compatibility
-Compatible with iTop 2.4+
-
-*Note: Partial compatibility with iTop 2.3, only the admin console.*
+- **Compatible** with iTop 2.4, 2.5, 2.6.
+- **Obsolete** with iTop 2.7 and later as Font Awesome v5 was reintegrate in iTop's core.
 
 ## Downloads
 Stable releases can be found either on the [releases page](https://github.com/Molkobain/itop-fontawesome5-pack/releases) or on [Molkobain I/O](https://www.molkobain.com/product/font-awesome-5-pack/).

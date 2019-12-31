@@ -16,24 +16,28 @@ use Silex\Application;
 // Protection for iTop 2.3 and older
 if(class_exists('AbstractPortalUIExtension'))
 {
-	/**
-	 * Class PortalUIExtension
-	 *
-	 * @package Molkobain\iTop\Extension\FontAwesome5\Portal\Extension
-	 */
-	class PortalUIExtension extends AbstractPortalUIExtension
+	// Protection for iTop 2.7 and newer
+	if(version_compare(ITOP_VERSION, '2.7', '<'))
 	{
 		/**
-		 * @inheritdoc
+		 * Class PortalUIExtension
+		 *
+		 * @package Molkobain\iTop\Extension\FontAwesome5\Portal\Extension
 		 */
-		public function GetCSSFiles(Application $oApp)
+		class PortalUIExtension extends AbstractPortalUIExtension
 		{
-			$aReturn = array();
+			/**
+			 * @inheritdoc
+			 */
+			public function GetCSSFiles(Application $oApp)
+			{
+				$aReturn = array();
 
-			$aReturn[] = utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/fontawesome-free-5.7.2-web/css/all.min.css?v=' . utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
-			$aReturn[] = utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/common/css/fontawesome5-pack.css?v=' . utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
+				$aReturn[] = utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/fontawesome-free-5.7.2-web/css/all.min.css?v=' . utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
+				$aReturn[] = utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/common/css/fontawesome5-pack.css?v=' . utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
 
-			return $aReturn;
+				return $aReturn;
+			}
 		}
 	}
 }
