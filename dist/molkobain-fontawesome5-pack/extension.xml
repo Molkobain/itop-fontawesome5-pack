@@ -5,10 +5,13 @@
 	<author><![CDATA[Guillaume Lajarige]]></author>
 	<label><![CDATA[Font Awesome 5]]></label>
 	<description><![CDATA[Use new icon sets for both portal & console.]]></description>
-	<version>1.4.0</version>
-	<release_date>2021-10-20</release_date>
-	<version_description><![CDATA[Add config. param. to enable/disable the extension]]></version_description>
-	<itop_version_min>2.4.0</itop_version_min>
+	<version>1.5.0</version>
+	<release_date>2023-07-30</release_date>
+	<version_description><![CDATA[
+  * Raise iTop min. version to 2.7
+  * Migrate deprecated APIs for full compatibility with future iTop version
+  * Rename files to match conventions]]></version_description>
+	<itop_version_min>2.7.0</itop_version_min>
 	<status>stable</status>
 	<mandatory>false</mandatory>
 	<more_info_url>https://github.com/Molkobain/itop-fontawesome5-pack</more_info_url>
