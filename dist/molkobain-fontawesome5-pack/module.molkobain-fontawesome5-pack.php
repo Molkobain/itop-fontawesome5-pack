@@ -31,6 +31,8 @@ SetupWebPage::AddModule(
 		// Components
 		//
 		'datamodel' => array(
+			// Important: Legacy class MUST be loaded before the standard.
+			'console/pageuiextensionlegacy.class.inc.php',
 			'console/pageuiextension.class.inc.php',
 			// Important: Legacy class MUST be loaded before the standard.
 			'portal/portaluiextensionlegacy.class.inc.php',

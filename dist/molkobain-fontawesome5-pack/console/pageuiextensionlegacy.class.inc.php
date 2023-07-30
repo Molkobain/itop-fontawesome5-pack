@@ -12,30 +12,44 @@ namespace Molkobain\iTop\Extension\FontAwesome5\Console\Extension;
 use MetaModel;
 use utils;
 use iTopWebPage;
-use iBackofficeLinkedStylesheetsExtension;
+use iPageUIExtension;
 
-// Protection, for iTop 3.0 only (As of iTop 3.0 FontAwesome is acutally already updated to v5.12, but we decide to obselete this extension from iTop 3.1+)
-if(!class_exists('Molkobain\\iTop\\Extension\\FontAwesome5\\Console\\Extension\\PageUIExtensionLegacy') && version_compare(ITOP_VERSION, '3.1', '<')) {
+// Protection, only for iTop 2.4-2.7
+if(version_compare(ITOP_VERSION, '2.3', '>') && version_compare(ITOP_VERSION, '3.0', '<') && (ITOP_VERSION !== 'develop')) {
 	/**
 	 * Class ConsoleUIExtension
 	 *
 	 * @package Molkobain\iTop\Extension\FontAwesome5\Console\Extension
 	 */
-	class PageUIExtension implements iBackofficeLinkedStylesheetsExtension
+	class PageUIExtensionLegacy implements iPageUIExtension
 	{
 		/**
 		 * @inheritdoc
 		 */
-		public function GetLinkedStylesheetsAbsUrls(iTopWebPage $oPage): array
+		public function GetNorthPaneHtml(iTopWebPage $oPage)
 		{
 			if (MetaModel::GetConfig()->GetModuleSetting('molkobain-fontawesome5-pack', 'enabled', true) === false) {
-				return [];
+				return;
 			}
 
 			$sModuleVersion = utils::GetCompiledModuleVersion('molkobain-fontawesome5-pack');
-			return [
-				utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/fontawesome-free-5.15.3-web/css/all.min.css?v=' . $sModuleVersion
-			];
+			$oPage->add_linked_stylesheet(utils::GetAbsoluteUrlModulesRoot() . 'molkobain-fontawesome5-pack/fontawesome-free-5.15.3-web/css/all.min.css?v=' . $sModuleVersion);
+		}
+
+		/**
+		 * @inheritdoc
+		 */
+		public function GetSouthPaneHtml(iTopWebPage $oPage)
+		{
+			// Do nothing.
+		}
+
+		/**
+		 * @inheritdoc
+		 */
+		public function GetBannerHtml(iTopWebPage $oPage)
+		{
+			// Do nothing.
 		}
 	}
 }
